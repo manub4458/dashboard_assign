@@ -125,7 +125,35 @@
       </button>
     </div>
   </div>
-  
+  {#if filter === 0}
+		<div>
+      error
+    </div>		
+	{:else if filter.length > 0}
+		{#each filter as {country, topic, end_year, sector, pestle, source, region}}
+			<DataColumn 
+            {country} 
+						{topic} 
+						{end_year}
+						{sector}
+						{pestle}
+						{source}
+						{region}
+						 />
+		{/each}	
+	{:else}
+		{#each filter as {country, topic, end_year, sector, pestle, source, region}}
+						<DataColumn
+            {country} 
+						{topic} 
+						{end_year}
+						{sector}
+						{pestle}
+						{source}
+						{region}
+            />
+		{/each}	
+	{/if}
   <style>
     /* Add your custom styles for the table and components here */
   </style>
