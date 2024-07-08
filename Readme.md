@@ -5,12 +5,7 @@
 
 ## **Installation**
 
-Install frontend project with npm
 
-```bash
-  cd client
-  npm install
-```
 
 Install server project with npm
 
@@ -47,11 +42,7 @@ Start the server
   cd client
 ```
 
-Install dependencies
 
-```bash
-  npm install
-```
 
 Start the server
 
